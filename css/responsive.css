@@ -1,0 +1,182 @@
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media(max-width:1200px){
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:992px){
+
+    header{
+
+        padding:0 30px;
+
+    }
+
+    .hero{
+
+        padding:60px 30px;
+
+    }
+
+    .category{
+
+        width:94%;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    header{
+
+        height:65px;
+
+        padding:0 20px;
+
+    }
+
+    .logo img{
+
+        width:46px;
+
+        height:46px;
+
+    }
+
+    .logo span{
+
+        font-size:22px;
+
+    }
+
+    .navbar{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+    }
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .hero button{
+
+        width:100%;
+
+    }
+
+    footer{
+
+        padding:50px 30px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+    .hero{
+
+        padding:35px 18px;
+
+    }
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .title{
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+    }
+
+    .title h2{
+
+        font-size:22px;
+
+    }
+
+    .slider{
+
+        gap:15px;
+
+    }
+
+    footer{
+
+        padding:40px 20px;
+
+    }
+
+    .footer-top{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+}
