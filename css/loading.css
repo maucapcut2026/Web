@@ -1,0 +1,321 @@
+/* =========================================
+   LOADING
+========================================= */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #f8fbff,
+        #eef5ff
+    );
+
+    backdrop-filter:blur(8px);
+
+    z-index:999999;
+
+    transition:
+        opacity .5s ease,
+        visibility .5s ease;
+
+}
+
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================
+   LOADING CARD
+========================================= */
+
+.loader-card{
+
+    width:360px;
+
+    padding:45px 35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.92);
+
+    border:1px solid rgba(255,255,255,.8);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.08),
+        0 8px 25px rgba(37,99,235,.15);
+
+    animation:cardUp .8s ease;
+
+}
+
+
+/* =========================================
+   LOADING LOGO
+========================================= */
+
+.loader-logo{
+
+    width:110px;
+
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 0 25px rgba(37,99,235,.35),
+        0 0 55px rgba(37,99,235,.25);
+
+    animation:
+        floatLogo 2.5s ease-in-out infinite,
+        glow 2s ease-in-out infinite alternate;
+
+}
+
+
+/* =========================================
+   LOADING TITLE
+========================================= */
+
+.loader-card h2{
+
+    margin:25px 0 8px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+    letter-spacing:.5px;
+
+}
+
+
+/* =========================================
+   LOADING PERCENT
+========================================= */
+
+.loader-percent{
+
+    margin-bottom:20px;
+
+    font-size:36px;
+
+    font-weight:800;
+
+    color:#111827;
+
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.loading-bar{
+
+    width:280px;
+
+    height:10px;
+
+    background:#dbeafe;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.loading-bar span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6,
+        #60a5fa,
+        #93c5fd
+    );
+
+    background-size:200% 100%;
+
+    animation:progressMove 2s linear infinite;
+
+    transition:width .25s linear;
+
+}
+
+
+/* =========================================
+   LOADING TEXT
+========================================= */
+
+.loader-card p{
+
+    margin-top:18px;
+
+    font-size:15px;
+
+    color:#6b7280;
+
+    letter-spacing:.3px;
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:
+            0 0 18px rgba(37,99,235,.25),
+            0 0 35px rgba(37,99,235,.18);
+
+    }
+
+    to{
+
+        box-shadow:
+            0 0 35px rgba(37,99,235,.5),
+            0 0 70px rgba(37,99,235,.35);
+
+    }
+
+}
+
+@keyframes floatLogo{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+@keyframes progressMove{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:200% 0;
+
+    }
+
+}
+
+@keyframes cardUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:480px){
+
+    .loader-card{
+
+        width:90%;
+
+        padding:35px 25px;
+
+    }
+
+    .loader-logo{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    .loader-card h2{
+
+        font-size:24px;
+
+    }
+
+    .loader-percent{
+
+        font-size:30px;
+
+    }
+
+    .loading-bar{
+
+        width:100%;
+
+    }
+
+}
