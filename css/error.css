@@ -1,0 +1,236 @@
+/* =========================================
+   API ERROR OVERLAY
+========================================= */
+
+#api-error-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    z-index:999999;
+
+    animation:fadeOverlay .35s ease;
+
+}
+
+
+/* =========================================
+   ERROR BOX
+========================================= */
+
+.api-error-box{
+
+    width:min(460px,100%);
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 25px 70px rgba(0,0,0,.18);
+
+    border:1px solid rgba(0,0,0,.06);
+
+    animation:popup .35s ease;
+
+}
+
+
+/* =========================================
+   ERROR CODE
+========================================= */
+
+.api-error-code{
+
+    font-size:92px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.api-error-box h2{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.api-error-box p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.api-error-box button{
+
+    padding:14px 38px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:
+
+        0 12px 25px rgba(37,99,235,.25);
+
+}
+
+.api-error-box button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+.api-error-box button:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes fadeOverlay{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px) scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .api-error-box{
+
+        padding:35px 25px;
+
+        border-radius:20px;
+
+    }
+
+    .api-error-code{
+
+        font-size:72px;
+
+    }
+
+    .api-error-box h2{
+
+        font-size:24px;
+
+    }
+
+    .api-error-box p{
+
+        font-size:15px;
+
+    }
+
+    .api-error-box button{
+
+        width:100%;
+
+    }
+
+}

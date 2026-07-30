@@ -1,0 +1,185 @@
+/* =========================================
+   CATEGORY
+========================================= */
+
+.category{
+
+    width:min(var(--container),92%);
+
+    margin:70px auto;
+
+}
+
+
+/* =========================================
+   CATEGORY HEADER
+========================================= */
+
+.title{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* =========================================
+   CATEGORY TITLE
+========================================= */
+
+.title h2{
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:var(--text);
+
+    line-height:1.2;
+
+}
+
+
+/* =========================================
+   CATEGORY LINK
+========================================= */
+
+.title a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.title a:hover{
+
+    opacity:.75;
+
+    transform:translateX(5px);
+
+}
+
+
+/* =========================================
+   CATEGORY ICON
+========================================= */
+
+.title h2 i{
+
+    margin-right:8px;
+
+}
+
+
+/* =========================================
+   CATEGORY DIVIDER
+========================================= */
+
+.category+.category{
+
+    margin-top:80px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:992px){
+
+    .category{
+
+        margin:60px auto;
+
+    }
+
+    .title h2{
+
+        font-size:26px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .category{
+
+        width:94%;
+
+        margin:50px auto;
+
+    }
+
+    .title{
+
+        margin-bottom:20px;
+
+    }
+
+    .title h2{
+
+        font-size:22px;
+
+    }
+
+    .title a{
+
+        font-size:14px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .category{
+
+        width:95%;
+
+        margin:40px auto;
+
+    }
+
+    .title{
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+        margin-bottom:18px;
+
+    }
+
+    .title h2{
+
+        font-size:20px;
+
+    }
+
+    .title a{
+
+        font-size:13px;
+
+    }
+
+}

@@ -1,0 +1,314 @@
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+
+    width:100%;
+
+    min-height:75vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+    padding:
+        80px
+        80px
+        40px;
+
+}
+
+
+/* =========================================
+   HERO LEFT
+========================================= */
+
+.hero-text{
+
+    width:50%;
+
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero-text h1{
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+    color:var(--text);
+
+    font-weight:800;
+
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-text p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    color:var(--textLight);
+
+}
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.hero button{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:
+        16px
+        38px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.hero button:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--primaryHover);
+
+}
+
+
+/* =========================================
+   BUTTON RIPPLE
+========================================= */
+
+.hero button::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.3);
+
+    transform:translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+.hero button:active::after{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+
+/* =========================================
+   HERO RIGHT
+========================================= */
+
+.hero-image{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:620px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* =========================================
+   FLOAT EFFECT
+========================================= */
+
+.hero-image.float{
+
+    animation:float 5s ease infinite;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1200px){
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        min-height:auto;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+
+    }
+
+    .hero-text h1{
+
+        font-size:48px;
+
+    }
+
+    .hero-image img{
+
+        max-width:720px;
+
+        height:340px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:60px 30px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:36px;
+
+    }
+
+    .hero-text p{
+
+        font-size:16px;
+
+    }
+
+    .hero button{
+
+        width:100%;
+
+    }
+
+    .hero-image img{
+
+        height:250px;
+
+        border-radius:22px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero{
+
+        padding:35px 18px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-image img{
+
+        height:200px;
+
+        border-radius:18px;
+
+    }
+
+}

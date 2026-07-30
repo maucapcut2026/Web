@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mẫu CapCut</title>
+
+<link rel="icon" type="image/png" href="images/favicon.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/loading.css">
+</head>
+
+<body>
+
+<div id="loader">
+
+    <div class="loader-card">
+
+        <img src="images/logo.jpeg" class="loader-logo">
+
+        <h2>Mẫu CapCut</h2>
+
+        <div class="loader-percent">0%</div>
+
+        <div class="loading-bar">
+            <span id="loadingFill"></span>
+        </div>
+
+        <p>Đang tải dữ liệu...</p>
+
+    </div>
+
+</div>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo">
+        <span>Mẫu CapCut</span>
+    </div>
+
+    <!-- Nút menu -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+
+        <a href="#hero">🏠 Trang chủ</a>
+
+        <a href="#new">🔥 Mới nhất</a>
+
+        <a href="#tiktok">🎵 TikTok Hot</a>
+
+        <a href="#music">🎧 Nhạc Trend</a>
+
+        <div class="user-menu">
+
+            <img src="images/avatar.png" class="avatar" alt="Avatar">
+
+            <span class="username">ABC_ABCD</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+            <div class="dropdown">
+
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i>
+                    Hồ sơ
+                </a>
+
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-gauge"></i>
+                    Dashboard
+                </a>
+
+                <a href="admin/index.html">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Quản trị
+                </a>
+
+                <hr>
+
+                <a href="#" id="logoutBtn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Đăng xuất
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<section class="hero" id="hero">
+
+    <div class="hero-text">
+
+        <h1>Khám phá hàng nghìn mẫu CapCut đẹp nhất</h1>
+
+        <p>
+            Cập nhật mỗi ngày với các template hot TikTok, Reels và Shorts.
+        </p>
+
+        <button>Xem ngay</button>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="images/" alt="Banner">
+
+    </div>
+
+</section>
+
+<section class="category" id="new">
+
+    <div class="title">
+
+        <h2>🔥 Mới nhất</h2>
+
+        <a href="#new">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="slider">
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="category" id="tiktok">
+
+    <div class="title">
+
+        <h2>🔥 TikTok Hot</h2>
+
+        <a href="#">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="slider">
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="category" id="music">
+
+    <div class="title">
+
+        <h2>🎵 Nhạc Trend</h2>
+
+        <a href="#">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="slider">
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="category">
+    <div class="title">
+
+        <h2>✨ Hiệu ứng đẹp</h2>
+
+        <a href="#">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="slider">
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="images/" alt="">
+
+            <h3>Tiêu đề bài viết</h3>
+
+            <p>Mô tả ngắn...</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-bottom">
+        © 2026 Mẫu CapCut. All rights reserved.
+    </div>
+</footer>
+
+<script src="js/loading.js"></script>
+
+</body>
+</html>
